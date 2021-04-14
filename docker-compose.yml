@@ -2,6 +2,7 @@ version: "3.0"
 services:
     redis:
         image: "redis"
+        command: redis-server --requirepass testpassword
         ports:
             - 6379:6379
         

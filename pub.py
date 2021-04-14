@@ -7,7 +7,7 @@ redisPort = 6379
 channel = sys.argv[1]
 msg = sys.argv[2]
 
-r = redis.Redis(host=redisHost, port=redisPort, charset="utf-8", decode_responses=True)
+r = redis.Redis(host=redisHost, port=redisPort, charset="utf-8", decode_responses=True, password="testpassword")
 
 def pub():
     data = {
